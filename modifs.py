@@ -21,8 +21,7 @@ covid_monde_url = (
     "https://covid19.who.int/WHO-COVID-19-global-data.csv"
     )
 
-covid_monde = pd.read_csv(covid_monde_url, sep=";", parse_dates=True, index_col=2,encoding= 'utf-8')
-covid_monde.sort_index(inplace=True)
+covid_monde = pd.read_csv(covid_monde_url, sep=",")
 
 covid_url = (
     "https://www.data.gouv.fr/fr/datasets/r/900da9b0-8987-4ba7-b117-7aea0e53f530"
