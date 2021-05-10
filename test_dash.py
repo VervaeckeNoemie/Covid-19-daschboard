@@ -11,6 +11,8 @@ import dash_bio as dashbio
 # from six import PY3
 
 
+app = dash.Dash('Covid')
+
 covid_monde_url = (
     "https://covid19.who.int/WHO-COVID-19-global-data.csv"
     )
